@@ -43,7 +43,7 @@ def dummy_data(request):
             material=random.choice(materials),
             style=random.choice(styles),
             description=fake.text(),
-            photo=fake.image_url(),
+            photo="https://unsplash.com/photos/qxcQG21m_qE",
             gender=random.choice(genders),
         )
         shoe.save()
